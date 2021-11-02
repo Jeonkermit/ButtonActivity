@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val toastButton = findViewById<Button>(R.id.myButton1)
         toastButton.setOnClickListener {
-            Toast.makeText(this, "toast 메세지", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "toast 메세지", Toast.LENGTH_LONG).show()
         }
 
         val countButton = findViewById<Button>(R.id.myButton2)

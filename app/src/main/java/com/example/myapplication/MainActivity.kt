@@ -9,23 +9,23 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         
         val number = findViewById<TextView>(R.id.number)
-        val intent = Intent(this, MainActivity2::class.java)
+        val intent = Intent(this, ButtonActivity::class.java)
 
-        val toast = findViewById<Button>(R.id.mybutton1)
-        toast.setOnClickListener {
+        val toastButton = findViewById<Button>(R.id.mybutton1)
+        toastButton.setOnClickListener {
             Toast.makeText(this, "toast 메세지", Toast.LENGTH_LONG).show();
         }
 
-        val count = findViewById<Button>(R.id.mybutton2)
+        val countButton = findViewById<Button>(R.id.mybutton2)
         var num = 0
-        count.setOnClickListener {
+        countButton.setOnClickListener {
             num += 1
-            number.setText(""+num)
+            number.setText(num.toString())
             intent.putExtra("num", num)
         }
 
-        val random = findViewById<Button>(R.id.mybutton3)
-        random.setOnClickListener {
+        val randomButton = findViewById<Button>(R.id.mybutton3)
+        randomButton.setOnClickListener {
             intent.putExtra("num", num)
             startActivity(intent)
         }

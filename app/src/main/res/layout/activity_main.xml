@@ -19,7 +19,7 @@
         android:textColor="#00008B"/>
 
     <Button
-        android:id="@+id/mybutton1"
+        android:id="@+id/myButton1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#00FF"
@@ -29,7 +29,7 @@
         android:textSize="20dp" />
 
     <Button
-        android:id="@+id/mybutton2"
+        android:id="@+id/myButton2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp"
@@ -39,7 +39,7 @@
         android:background="#00FF"/>
 
     <Button
-        android:id="@+id/mybutton3"
+        android:id="@+id/myButton3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp"

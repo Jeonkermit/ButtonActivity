@@ -11,12 +11,12 @@ class ButtonActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main_2)
 
         val justText = findViewById<TextView>(R.id.justText)
-        val textnum = intent.getIntExtra("num", 0)
-        justText.setText("Here is a random number between 0 to "+textnum)
+        val textNum = intent.getIntExtra("num", 0)
+        justText.setText("Here is a random number between 0 to "+textNum)
 
-        val randomnum = findViewById<TextView>(R.id.randomnum)
-        val selectnum = Random(textnum)
-        randomnum.setText(selectnum.toString())
+        val randomNum = findViewById<TextView>(R.id.randomNum)
+        val selectNum = Random(textNum)
+        randomNum.setText(selectNum.toString())
 
     }
 }

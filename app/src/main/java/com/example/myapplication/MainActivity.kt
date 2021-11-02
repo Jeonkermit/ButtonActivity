@@ -11,12 +11,12 @@ class MainActivity : AppCompatActivity() {
         val number = findViewById<TextView>(R.id.number)
         val intent = Intent(this, ButtonActivity::class.java)
 
-        val toastButton = findViewById<Button>(R.id.mybutton1)
+        val toastButton = findViewById<Button>(R.id.myButton1)
         toastButton.setOnClickListener {
             Toast.makeText(this, "toast 메세지", Toast.LENGTH_LONG).show();
         }
 
-        val countButton = findViewById<Button>(R.id.mybutton2)
+        val countButton = findViewById<Button>(R.id.myButton2)
         var num = 0
         countButton.setOnClickListener {
             num += 1
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("num", num)
         }
 
-        val randomButton = findViewById<Button>(R.id.mybutton3)
+        val randomButton = findViewById<Button>(R.id.myButton3)
         randomButton.setOnClickListener {
             intent.putExtra("num", num)
             startActivity(intent)

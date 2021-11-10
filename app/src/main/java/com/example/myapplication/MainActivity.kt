@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         var num = 0
         countButton.setOnClickListener {
             num += 1
-            number.setText(num.toString())
+            number.text=num.toString()
             intent.putExtra("num", num)
         }
 
